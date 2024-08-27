@@ -1,0 +1,13 @@
+services:
+  api-dev:
+    container_name: dev_api_service_container
+    image: dev-api-service
+    ports:
+      - '90:80'
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+
